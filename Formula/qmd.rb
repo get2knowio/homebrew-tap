@@ -18,7 +18,7 @@ class Qmd < Formula
   depends_on "node"
 
   def install
-    system "npm", "install", "--prefix=#{libexec}", *std_npm_args
+    system "npm", "install", *std_npm_args(ignore_scripts: false)
     bin.env_script_all_files libexec/"bin", PATH: "#{Formula["node"].opt_bin}:$PATH"
   end
 
