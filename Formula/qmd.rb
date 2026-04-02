@@ -19,7 +19,7 @@ class Qmd < Formula
 
   def install
     system "npm", "install", *std_npm_args(ignore_scripts: false)
-    bin.env_script_all_files libexec/"bin", PATH: "#{Formula["node"].opt_bin}:$PATH"
+    (bin/"qmd").write_env_script libexec/"bin/qmd", PATH: "#{Formula["node"].opt_bin}:$PATH"
   end
 
   test do
