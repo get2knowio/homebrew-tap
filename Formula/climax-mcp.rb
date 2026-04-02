@@ -7,6 +7,12 @@ class ClimaxMcp < Formula
   sha256 "ab1de846fb6cf146063a612dbcea51df77f392d54cce83c84c5d8ada78041d7e"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/get2knowio/homebrew-tap/releases/download/climax-mcp-0.4.0"
+    rebuild 1
+    sha256 cellar: :any, arm64_sequoia: "a6ef42c40ff3abd75023c649c047d2dd0621db77fe7a58b82568c4ae9a9e0f85"
+  end
+
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
   depends_on "libyaml"
