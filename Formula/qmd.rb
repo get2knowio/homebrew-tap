@@ -19,7 +19,7 @@ class Qmd < Formula
 
   def install
     system "npm", "install", "--prefix=#{libexec}", *std_npm_args
-    bin.install_symlink Dir["#{libexec}/bin/*"]
+    bin.env_script_all_files libexec/"bin", PATH: "#{Formula["node"].opt_bin}:$PATH"
   end
 
   test do
