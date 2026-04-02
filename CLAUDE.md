@@ -27,7 +27,7 @@ class Name < Formula
   desc "Short description"
   homepage "https://example.com"
   url "https://github.com/owner/repo/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "..."
+  sha256 "the-sha256-of-the-tarball"  # use: curl -L <url> | shasum -a 256
   license "MIT"
 
   def install

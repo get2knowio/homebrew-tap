@@ -9,6 +9,7 @@ class ClimaxMcp < Formula
 
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
+  depends_on "libyaml"
   depends_on "python@3.13"
 
   resource "annotated-types" do
