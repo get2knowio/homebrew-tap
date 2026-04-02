@@ -1,7 +1,7 @@
 class ClimaxMcp < Formula
   include Language::Python::Virtualenv
 
-  desc "Expose any CLI as MCP tools via YAML configuration"
+  desc "Expose any CLI as MCP tools via YAML config"
   homepage "https://github.com/get2knowio/climax"
   url "https://files.pythonhosted.org/packages/28/f3/740a07d63bc156bcf30aeba7c00f4787448fc24433af5bcd5d82f6b08576/climax_mcp-0.4.0.tar.gz"
   sha256 "ab1de846fb6cf146063a612dbcea51df77f392d54cce83c84c5d8ada78041d7e"
