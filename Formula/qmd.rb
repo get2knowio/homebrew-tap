@@ -11,7 +11,8 @@ class Qmd < Formula
 
   bottle do
     root_url "https://github.com/get2knowio/homebrew-tap/releases/download/qmd-2.0.1"
-    sha256 cellar: :any, arm64_sequoia: "a09a8bafb2b5a9e2005d286b1407708d2994a75476e1be9e2ff45de9343a426c"
+    rebuild 1
+    sha256 cellar: :any, arm64_sequoia: "12cb9031e23bee528bb08c6b8adce12b9233cc063cb171da892194598a9350f4"
   end
 
   depends_on "cmake" => :build
