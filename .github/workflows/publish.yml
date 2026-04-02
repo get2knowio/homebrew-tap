@@ -5,6 +5,10 @@ on:
     types:
       - labeled
 
+concurrency:
+  group: pr-pull-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   pr-pull:
     if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
