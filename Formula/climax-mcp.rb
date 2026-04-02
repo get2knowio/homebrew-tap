@@ -183,6 +183,6 @@ class ClimaxMcp < Formula
   end
 
   test do
-    system bin/"climax", "--version"
+    assert_match "usage: climax", shell_output("#{bin}/climax --help 2>&1")
   end
 end
