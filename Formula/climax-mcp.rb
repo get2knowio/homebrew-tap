@@ -10,6 +10,7 @@ class ClimaxMcp < Formula
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
   depends_on "libyaml"
+  depends_on "openssl@3"
   depends_on "python@3.13"
 
   resource "annotated-types" do
@@ -98,8 +99,8 @@ class ClimaxMcp < Formula
   end
 
   resource "pydantic-core" do
-    url "https://files.pythonhosted.org/packages/c3/3c/db023b31f61152c665512032467c3c7fb3a21a997e4b54d54cd50ee55895/pydantic_core-2.45.0.tar.gz"
-    sha256 "a3ff659217dcb3d13442ed348e12e12ed6c876791154a575def1fea9bb667d8e"
+    url "https://files.pythonhosted.org/packages/71/70/23b021c950c2addd24ec408e9ab05d59b035b39d97cdc1130e1bce647bb6/pydantic_core-2.41.5.tar.gz"
+    sha256 "08daa51ea16ad373ffd5e7606252cc32f07bc72b28284b6bc9c6df804816476e"
   end
 
   resource "pydantic-settings" do
