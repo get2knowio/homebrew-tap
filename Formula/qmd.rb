@@ -9,6 +9,11 @@ class Qmd < Formula
   sha256 "4f7156f50decebee8422f5e49e1b8b42db08b37b8e33446d83b28e391875a979"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/get2knowio/homebrew-tap/releases/download/qmd-2.0.1"
+    sha256 cellar: :any, arm64_sequoia: "a09a8bafb2b5a9e2005d286b1407708d2994a75476e1be9e2ff45de9343a426c"
+  end
+
   depends_on "cmake" => :build
   depends_on "node"
 
